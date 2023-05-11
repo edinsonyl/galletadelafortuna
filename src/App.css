@@ -1,0 +1,74 @@
+
+  .body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .fortune-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+
+  }
+  h1 {
+    position: absolute;
+    top: 30px; /* ajusta la posición vertical del título */
+    left: 50%; /* centra el título horizontalmente */
+    transform: translateX(-50%);
+    font-size: 2em; /* ajusta el tamaño de fuente del título */
+  }
+  button {
+    position: absolute;
+    top: 430px;
+    background-color: transparent;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  button:hover {
+    background-color: transparent; 
+    color: black; 
+  }
+  
+  button:active {
+    background-color: #6679ce; 
+    box-shadow: none; 
+    transform: translateY(2px); 
+  }
+  
+  .fortune-selec {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .fortune {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  @media (max-width: 500px) {
+    .fortune {
+      font-size: 1rem;
+    }
+    button {
+        position: absolute;
+        top: 360px;
+        background-color: transparent;
+        margin-top: 20px;
+      }
+  }
